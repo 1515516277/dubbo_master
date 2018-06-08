@@ -1,0 +1,8 @@
+com\ming\entity\DempEntity.class
+com\ming\entity\EmpEntity.class
+com\ming\server\Empservice.class
+com\ming\until\ResultMsg.class
+com\ming\until\Msg.class
+com\ming\server\Dempservice.class
+com\ming\until\SixEnum.class
+com\ming\until\PropertiesUntil.class

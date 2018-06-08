@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ming.dao.EmpEntityMapper">
+	<select id="selectall" resultType="com.ming.entity.EmpEntity">
+		select e.*,d.name dName from emp e left join dept d on e.d_id=d.id
+	</select>
+	
+	<insert id="insertemp" parameterType="com.ming.entity.EmpEntity">
+		insert into emp (name,gender,email,d_id)values(#{name},#{gender},#{email},#{dId})
+	</insert>
+	
+	<delete id="delemp" parameterType="java.lang.Integer" >
+		delete from emp where id=#{id}
+	</delete>
+</mapper>
